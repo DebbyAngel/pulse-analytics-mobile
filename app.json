@@ -1,0 +1,48 @@
+{
+  "expo": {
+    "name": "Pulse Analytics Atelier",
+    "slug": "pulse-analytics-shopify-website",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "pulseanalytics",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "bundleIdentifier": "com.pulsetechanalytics.atelier"
+    },
+    "android": {
+      "package": "com.pulsetechanalytics.atelier",
+      "adaptiveIcon": {
+        "backgroundColor": "#f3f3eb",
+        "foregroundImage": "./assets/images/android-icon-foreground.png"
+      }
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-secure-store",
+        {
+          "configureAndroidBackup": true
+        }
+      ],
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#f7f6f0",
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 76
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "f56c1540-cb2a-4e87-a1dc-0b59b7c6aa61"
+      },
+      "router": {}
+    },
+    "owner": "pulse-analytics"
+  }
+}
